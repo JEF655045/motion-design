@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>menuOpenA</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+   
+    <section class="frame">
+        <svg class="frame" viewBox="0 0 1920 1080">
+            <!--set ground object to organe first to hide beginning rectangle -->
+            <g fill="#FB652F">
+                <rect x="960" y="540" width="5" height="5"/>
+            </g>
+        </svg>
+    </section>
+
+
+  <script src="anime.js"></script>
+  <script>
+
+      /* The animation took steps, horizontal expan then vertical expand
+      In second animation, the transform parameter in X axis should be kept to maintain the rectangle shape */
+        var horizonAnimation = anime({
+            targets: 'rect',
+            transform: ['translate(0 0) scale(1 1)', 'translate(-95290 1) scale(100 1)'],
+            /* scale 100 times mean x'=96000
+            To be able to compensate the poisition change, translate is required
+            960 - 250 = 710 = 96000-95290
+            */
+            
+            /* when animation start fill rectangle with white color*/
+            fill: ['#FFFFFF'],
+            delay: 1000,
+            duration: 200,
+            autoplay: false,
+            easing: 'easeInOutQuart',
+        });
+      
+      var veritcalOpenAnimation = anime({
+            targets: 'rect',
+            transform: ['translate(-95290 1) scale(100 1)', 'translate(-95290 -53960) scale(100 100)'],
+            /* scale 100 times mean y'=54000
+            To be able to compensate the poisition change, translate is required
+            540 - 500 = 40 = 54000 - 53960
+            */
+          
+            
+            duration: 533,
+            autoplay: false,
+            easing: 'easeInOutQuart',
+        });
+      
+      /*when unit horizontal expand finish, then expand verically*/
+      horizonAnimation.settings.complete = function(){
+          veritcalOpenAnimation.restart();
+      }      
+      horizonAnimation.play();
+  </script>
+</body>
+</html>

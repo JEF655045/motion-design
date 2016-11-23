@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>blinkA</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>    
+         <section class="frame" style="background-color: #000000">
+        <svg class="frame" viewBox="0 0 1920 1080">
+            
+            <!--Two lines in the middle of viewing area with 0.1 thickness -->  
+            <rect id="yellow" x="0" y="540" width="1920" height="0.1" fill="#F2A91A"/>
+            <rect id="orange"x="0" y="540" width="1920" height="0.1" fill="#FB652F"/>
+            
+            
+        </svg>
+    </section>
+    
+
+  <script src="anime.js"></script>
+  <script>
+
+      
+        var closeAnimation = anime({
+            targets: 'rect#yellow', /*yellow line is the target*/
+            transform: ['translate(0 0) scale(1 1)', 'translate(0 -5832000) scale(1 10800)'],
+            /* The yellow line is 1920*0.01 at positon (0, 540) */
+            /* Transform to 1920*1080 at position (0,0)*/
+            delay: 1000,
+            duration: 117,
+            direction: 'reverse',  /* Reverse the transform function which means the yellow line will close from 1920*1080 to 1920*0.01 */
+            autoplay: false,
+            easing: 'easeInQuart',
+        });
+    
+      var openAnimation = anime({
+            targets: 'rect#orange', /*orange line is the target*/
+            transform: ['translate(0 0) scale(1 1)', 'translate(0 -5832000) scale(1 10800)'], 
+            /* The oragne line is 1920*0.01 at positon (0, 540) */
+            /* Transform to 1920*1080 at position (0,0)*/         
+            duration: 217,
+            autoplay: false,
+            easing: 'easeOutQuart',
+        });
+      
+      /*Set the timing that once yellow line rectangle close, the organe will then expand. */
+      closeAnimation.settings.complete = function(){
+          openAnimation.restart();
+      } 
+      closeAnimation.play();
+  </script>
+</body>
+</html>

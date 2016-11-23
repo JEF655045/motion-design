@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>zoom</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="frame" id="cmulogo_background">
+        <svg class="frame" viewBox="0 0 1920 1080">
+            
+            <!-- fill group object whith color here-->
+            <g fill="#FFFFFF">
+                <circle cx="960" cy="540" r="1"/>
+            </g>
+        </svg>
+    </section>
+
+  <script src="anime.js"></script>
+  <script>
+      
+        var scaleAnimation = anime({
+            targets: 'g',
+            transform: ['translate(0 0) scale(1)', 'translate(-95040 -53460) scale(100)'],
+            /* scale 100 times mean cx'=96000 cy'=54000 r'=100
+            To be able to compensate the poisition change, translate is required
+            960 = 96000-95040, 540 = 54000 - 53460
+            */
+            
+            delay: 1000,
+            duration: 1366,
+            autoplay: false,
+            easing: 'easeInOutQuart',
+        });
+      
+        scaleAnimation.play();
+      
+      
+  </script>
+</body>
+</html>

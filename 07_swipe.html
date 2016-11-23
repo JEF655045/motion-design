@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>swipe</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+     <section class="frame">
+        <svg class="frame" viewBox="0 0 1920 1080">
+            
+            <!-- fill group object whith color here-->
+            <g fill="#F2A91A">
+                <rect x="0" y="0" width="1920" height="1080"/>
+            </g>
+        </svg>
+    </section>
+
+  <script src="anime.js"></script>
+  <script>
+    var swipeAnimation = anime({
+      targets: 'rect',
+      
+    /* swipe all the way out the viewing area */
+      translateX: 1920,
+      duration: 800,
+      autoplay:false,
+      easing: 'easeInOutQuint',
+    }); 
+    swipeAnimation.play();
+      
+  </script>
+</body>
+</html>

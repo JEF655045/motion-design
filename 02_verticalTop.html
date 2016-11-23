@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>verticalTopA</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="frame" id="cmulogo_background">
+        <svg class="frame" viewBox="0 0 1920 1080">
+            
+            <!-- fill group object whith color here-->
+            <g fill="#FFFFFF">
+                
+                <!-- the anchor point of circle is its center
+                You don't need to align the object--> 
+                <circle cx="960" cy="-770" r="100"/>
+                
+                <!-- the anchor point of rectangle is upper-left
+                You need to align the object if using rectangle or svg
+                If object size = X * Y
+                x = 960 - (X/2) 
+                y = -770 - (Y/2)
+                This case X=200, Y=200     
+                
+                <rect x="860" y="-870" width="200" height="200"/>
+                -->
+            
+            </g>
+        </svg>
+    </section>
+
+  <script src="anime.js"></script>
+  <script>
+
+        var moveAnimation = anime({
+            targets: 'g',
+            
+            translateY: 770 + (1080/2), 
+            /*
+            -770 = start position 
+            1080/2 = half the verical viewing area */
+            
+            delay: 1000,
+            duration: 1366,
+            autoplay: false,
+            easing: 'easeInOutCirc',
+        });
+        moveAnimation.play();
+      
+  </script>
+</body>
+</html>

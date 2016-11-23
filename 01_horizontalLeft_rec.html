@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>horizontalLeft_rec</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="frame" id="cmulogo_background">
+        <svg class="frame" viewBox="0 0 1920 1080">
+            
+            <!-- fill group object whith color here-->
+            <g fill="#FFFFFF">
+                
+                
+                <!-- the anchor point of rectangle is upper-left
+                You need to align the object
+                If object size = X * Y
+                x = -350 - (X/2) 
+                y = 540 - (Y/2)
+                This case X=200, Y=200
+                -->   
+                 
+                <rect x="-450" y="440" width="200" height="200"/>
+                
+            
+            </g>
+        </svg>
+    </section>
+
+  <script src="anime.js"></script>
+  <script>
+
+        var moveAnimation = anime({
+            targets: 'g', 
+            translateX: 350 + (1920/2), 
+            /*
+            350 = start position 
+            1920/2 = half the horzirontal viewing area */
+            
+            delay: 1000,
+            duration: 1366,
+            autoplay: false,
+            easing: 'easeInOutCirc',
+        });
+        moveAnimation.play();
+      
+  </script>
+</body>
+</html>
