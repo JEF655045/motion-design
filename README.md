@@ -62,8 +62,11 @@ If you want to replace the item with a SVG object, please follow below steps.
 ### Scale Circle Object with compensation 
 ![zoom](././material/zoom.gif)
 
-SVG Scale function not only scale the size but also the coodrinate. As a result, you will need to use translate function to do the compensation.  
-![fig3](././material/figure-03.jpg)  
+SVG Scale function not only scale the size but also the coodrinate.
+As a result, you will need to use translate function to do the compensation.
+
+![fig3](././material/figure-03.jpg)
+
 ![fig4](././material/figure-04.jpg)
 
 ```html
@@ -97,6 +100,7 @@ SVG Scale function not only scale the size but also the coodrinate. As a result,
 </g>
 ```
 ```javascript
+<script>
   var scaleAnimation = anime({
     targets: 'rect',
     transform: ['translate(0 0) scale(1 1)', 'translate(-95140 -53660) scale(100 100)'], 
@@ -110,6 +114,7 @@ SVG Scale function not only scale the size but also the coodrinate. As a result,
   });
 
   scaleAnimation.play();
+</script>
 ```
 
 ### Scale Object with compensation in two steps
@@ -179,8 +184,7 @@ Use fill function with delay parameter plus direction with alternate paramter to
       /* scale point from 100% to 97% means cx'=931.2 cy'=523,8  
       The position need to be commensated 
       960 - 931.2 = 28.8, 540 - 0.97 = 16.2 */
-            
-    delay: 2000,
+      delay: 2000,
             
       /*After scale to 97%, this fill animation will make circel delay 2sec then expand back to 100% */
       fill:{
