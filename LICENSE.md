@@ -1,4 +1,4 @@
-
+![CMUlogo](././material/CMU_logo_horiz_red.png)
 
 The CMU License
 
