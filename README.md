@@ -1,9 +1,10 @@
 # motion-design
 
 ### Introduction
-The works utilize anime.js library to construct transition animation design. This work credits for School of Design in Carnegie Mellon University
+These works utilize [anime.js](http://anime-js.com) open source javascript library to construct transition animation design. There will be 8 examples below to illustrate differnent ways of utilizing the library.
 
 ### Transform Object
+![]
 
 ##### Circle
 ##### Rectangle
