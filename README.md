@@ -2,7 +2,7 @@
 
 ### Acknowledge
 
-![CMUlogo](../../material/CMU_logo_horiz_red.png)
+![CMUlogo](././material/CMU_logo_horiz_red.png)
 
 motion-design/material/CMU_logo_horiz_red.png
 
