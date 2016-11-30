@@ -1,8 +1,9 @@
 # motion-design
 ### Introduction 
 These works utilize [anime.js](http://anime-js.com) open source javascript library to construct transition animation design.  
-There will be 8 examples below to illustrate differnent ways of utilizing the library.  
-Remember to include below command into html.  
+There will be 8 examples below to illustrate differnent ways of utilizing the library.
+
+Remember to put anime.js into the same directory and include below line into html script.  
 ```javascript
 <script src="anime.js"></script>
 ```
