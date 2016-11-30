@@ -1,6 +1,6 @@
 # motion-design
 ### Introduction
-These works utilize [anime.js](http://anime-js.com) open source javascript library to construct transition animation design. There will be 8 examples below to illustrate differnent ways of utilizing the library.
+These works utilize [anime.js](http://anime-js.com) open source javascript library to construct transition animation design.  There will be 8 examples below to illustrate differnent ways of utilizing the library.
 ### Transform Object
 ![horizontalLeft](././material/horizontalLeft.gif)
 ![veriticalTop](././material/verticalTop.gif)
