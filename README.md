@@ -26,14 +26,15 @@ The view area is set to 1920x1080 where the animations take space.
 ```javascript
 <script>
   var moveAnimation = anime({
-  targets: 'g',
-  translateX: 350 + (1920/2), 
-  /* 350 = start position 
-  1920/2 = half the horzirontal viewing area */
-  delay: 1000,
-  duration: 1366,
-  easing: 'easeInOutCirc',
+    targets: 'g', /*group as target*/
+    translateX: 350 + (1920/2), 
+    /* 350 = start position 
+    1920/2 = half the horzirontal viewing area */
+    delay: 1000,
+    duration: 1366,
+    easing: 'easeInOutCirc',
   });
+  
   moveAnimation.play();
 </script>
 ```
