@@ -81,8 +81,7 @@ As a result, you will need to use translate function to do the compensation.
     transform: ['translate(0 0) scale(1)', 'translate(-95040 -53460) scale(100)'],
     /* scale 100 times mean cx'=96000 cy'=54000 r'=100
     To be able to compensate the poisition change, translate is required
-    960 = 96000-95040, 540 = 54000 - 53460
-    */
+    960 = 96000-95040, 540 = 54000 - 53460 */
     delay: 1000,
     duration: 1366,
     autoplay: false,
@@ -226,7 +225,6 @@ Use fill function with delay parameter plus direction with alternate paramter to
   }); 
   
   swipeAnimation.play();
-      
 </script>
 ```
 
