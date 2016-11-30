@@ -7,6 +7,13 @@ Remember to put anime.js into the same directory and include below line into htm
 ```javascript
 <script src="anime.js"></script>
 ```
+The view area is set to 1920x1080 where the animations take space.
+```html
+<svg class="frame" viewBox="0 0 1920 1080">
+...
+</svg>
+```
+
 ### Transform Object
 ![horizontalLeft](././material/horizontalLeft.gif)
 ![veriticalTop](././material/verticalTop.gif)
