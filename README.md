@@ -41,7 +41,7 @@ If you create a rectangle, the anchor point is in the upper-left corner.
 
 ##### SVG graphic
 If you want to replace the item with a SVG object, please follow below steps.  
-1. Create a illustrator file with size 200px * 200px. If you want to use other size, the parameter in animation function must be modified as well.
+1. Create a illustrator file with size 200px * 200px. If you want to use other size, the parameter in animation function must be modified as well.  
 2. ...
 
 
