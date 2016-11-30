@@ -6,6 +6,10 @@ There will be 8 examples below to illustrate differnent ways of utilizing the li
 ![horizontalLeft](././material/horizontalLeft.gif)
 ![veriticalTop](././material/verticalTop.gif)
 
+><g fill="#FFFFFF">
+>  <circle cx="-350" cy="540" r="100"/>
+></g>
+
 ##### Circle
 ![circle](././material/figure-02.jpg)
 
