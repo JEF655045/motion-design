@@ -28,7 +28,7 @@ The view area is set to 1920x1080 where the animations take space.
   var moveAnimation = anime({
     targets: 'g', /*group as target*/
     translateX: 350 + (1920/2), 
-    /* 350 = start position 
+    /* -350 = start position 
     1920/2 = half the horzirontal viewing area */
     delay: 1000,
     duration: 1366,
