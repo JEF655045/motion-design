@@ -48,15 +48,24 @@ If you create a rectangle, the anchor point is in the upper-left corner.
 ![rectangle](././material/figure-01.jpg)
 
 ##### SVG graphic
-If you want to replace the item with a SVG object, please follow below steps.  
-1. Create a illustrator file with size 200px * 200px. If you want to use other size, the parameter in animation function must be modified as well.  
-2. After drawing the icon, Click File -> Save As..., Choose file format to be SVG and press SAVE.  
-3. One window will pop up, click SVG code button and there will be a window full of code.  
-![svg](././material/SVG_Options_AI.png)  
+If you want to replace the item with a SVG object, please follow below steps.
+1. Create a illustrator file with size 200px * 200px. If you want to use other size, the parameter in animation function must be modified as well.
+
+2. After drawing the icon, Click File -> Save As..., Choose file format to be SVG and press SAVE.
+
+3. One window will pop up, click SVG code button and there will be a window full of code.
+
+![svg](././material/SVG_Options_AI.png)
+
 4. Copy the code into HTML file. You only need to copy the <g> and <path> part.
 
-### Scale Object
+### Scale Circle Object with compensation 
 ![zoom](././material/zoom.gif)
+
+SVG Scale function not only scale the size but also the 
+![fig3](././material/figure-03.jpg)
+![fig4](././material/figure-04.jpg)
+
 ```html
 <g fill="#FFFFFF">
   <circle cx="960" cy="540" r="1"/>
@@ -80,10 +89,8 @@ If you want to replace the item with a SVG object, please follow below steps.
 </script>
 ```
 
-### Scale Object with compensation
+### Scale Rectangle Object with compensation
 ![menuOpenalt](././material/menuOpenalt.gif)
-![fig3](././material/figure-03.jpg)
-![fig4](././material/figure-04.jpg)
 
             <g fill="#FFFFFF">
                 <rect x="960" y="540" width="2" height="2"/>
