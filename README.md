@@ -40,11 +40,11 @@ The view area is set to 1920x1080 where the animations take space.
 ```
 
 ##### Circle
-If you create a circle, the anchor point is in the middle.
+If you create a circle, the anchor point is in the middle.  
 ![circle](././material/figure-02.jpg)
 
 ##### Rectangle
-If you create a rectangle, the anchor point is in the upper-left corner.
+If you create a rectangle, the anchor point is in the upper-left corner.  
 ![rectangle](././material/figure-01.jpg)
 
 ##### SVG graphic
