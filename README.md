@@ -39,11 +39,35 @@ If you create a rectangle, the anchor point is in the upper-left corner.
 ![rectangle](././material/figure-01.jpg)
 
 ##### SVG graphic
-
+If you want to replace the item with a SVG object, please follow below steps.
+1. Create a illustrator file with size 200px * 200px. If you want to use other size, the parameter in animation function must be modified as well.
+2. ...
 
 
 ### Scale Object
 ![zoom](././material/zoom.gif)
+```html
+<g fill="#FFFFFF">
+  <circle cx="960" cy="540" r="1"/>
+</g>
+```
+```javascript
+<script>
+  var scaleAnimation = anime({
+    targets: 'g',
+    transform: ['translate(0 0) scale(1)', 'translate(-95040 -53460) scale(100)'],
+    /* scale 100 times mean cx'=96000 cy'=54000 r'=100
+    To be able to compensate the poisition change, translate is required
+    960 = 96000-95040, 540 = 54000 - 53460
+    */
+    delay: 1000,
+    duration: 1366,
+    autoplay: false,
+    easing: 'easeInOutQuart',
+  });
+  scaleAnimation.play();
+</script>
+        ```
 
 ### Scale Object with compensation
 ![menuOpenalt](././material/menuOpenalt.gif)
