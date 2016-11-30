@@ -31,12 +31,16 @@ Remember to put anime.js into the same directory and include below line into htm
 </script>
 ```
 ##### Circle
+If you create a circle, the anchor point is in the middle.
 ![circle](././material/figure-02.jpg)
 
 ##### Rectangle
+If you create a rectangle, the anchor point is in the upper-left corner.
 ![rectangle](././material/figure-01.jpg)
 
 ##### SVG graphic
+
+
 
 ### Scale Object
 ![zoom](././material/zoom.gif)
