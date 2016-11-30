@@ -11,7 +11,7 @@ Remember to put anime.js into the same directory and include below line into htm
 ![horizontalLeft](././material/horizontalLeft.gif)
 ![veriticalTop](././material/verticalTop.gif)
 
-```
+```html
 <g fill="#FFFFFF">
   <circle cx="-350" cy="540" r="100"/>
 </g>
