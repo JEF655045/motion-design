@@ -54,8 +54,7 @@ If you want to replace the item with a SVG object, please follow below steps.
 
 2. After drawing the icon, Click File -> Save As..., Choose file format to be SVG and press SAVE.
 
-3. One window will pop up, click SVG code button and there will be a window full of code.
-
+3. One window will pop up, click SVG code button and there will be a window full of code.  
 ![svg](././material/SVG_Options_AI.png)
 
 4. Copy the code into HTML file. You only need to copy the < g > and < path > part.
