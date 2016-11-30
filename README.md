@@ -50,7 +50,7 @@ If you create a rectangle, the anchor point is in the upper-left corner.
 ##### SVG graphic
 If you want to replace the item with a SVG object, please follow below steps.
 
-1. Create a illustrator file with size 200px * 200px. If you want to use other size, the parameter in animation function must be modified as well.
+1. Create a illustrator file with size 200px * 200px. (The anchor point is in upper-left corner) If you want to use other size, the parameter in animation function must be modified as well.
 
 2. After drawing the icon, Click File -> Save As..., Choose file format to be SVG and press SAVE.
 
@@ -62,8 +62,8 @@ If you want to replace the item with a SVG object, please follow below steps.
 ### Scale Circle Object with compensation 
 ![zoom](././material/zoom.gif)
 
-SVG Scale function not only scale the size but also the coodrinate. As a result, you will need to use translate function to do the compensation.
-![fig3](././material/figure-03.jpg)
+SVG Scale function not only scale the size but also the coodrinate. As a result, you will need to use translate function to do the compensation.  
+![fig3](././material/figure-03.jpg)  
 ![fig4](././material/figure-04.jpg)
 
 ```html
@@ -116,7 +116,7 @@ SVG Scale function not only scale the size but also the coodrinate. As a result,
 
 ![menuOpen](././material/menuOpen.gif)
 
-While you define animation into two seperate on, in the second animate you could use parameter from first one to make them looks like continuous.
+While you define animation into two seperate one, in the second animate you could use parameter from first one to make them looks like continuous.
 You will also need extra code to make sure the second one starts once the first one ends.
 ```html
 <g fill="#FB652F">
@@ -164,7 +164,7 @@ You will also need extra code to make sure the second one starts once the first 
 ### Method to Delay Animation
 ![buttonPress](././material/buttonPress.gif)
 
-Use fill function with delay parameter with 'alternate' direction paramter to iterate animation.
+Use fill function with delay parameter plus direction with alternate paramter to iterate animation.
 
 ```html
 <g fill="#FFFFFF">
@@ -245,7 +245,8 @@ Use fill function with delay parameter with 'alternate' direction paramter to it
     /* Transform to 1920*1080 at position (0,0)*/
     delay: 1000,
     duration: 117,
-    direction: 'reverse',  /* Reverse the transform function which means the yellow line will close from 1920*1080 to 1920*0.01 */
+    direction: 'reverse',
+    /* Reverse the transform function which means the yellow line will close from 1920*1080 to 1920*0.01 */
     autoplay: false,
     easing: 'easeInQuart',
   });
