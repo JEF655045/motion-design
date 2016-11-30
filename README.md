@@ -1,15 +1,34 @@
 # motion-design
 ### Introduction 
 These works utilize [anime.js](http://anime-js.com) open source javascript library to construct transition animation design.  
-There will be 8 examples below to illustrate differnent ways of utilizing the library.
+There will be 8 examples below to illustrate differnent ways of utilizing the library.  
+Remember to include below command into html.  
+```javascript
+<script src="anime.js"></script>
+```
 ### Transform Object
 ![horizontalLeft](././material/horizontalLeft.gif)
 ![veriticalTop](././material/verticalTop.gif)
 
-><g fill="#FFFFFF">
->  <circle cx="-350" cy="540" r="100"/>
-></g>
-
+```html
+<g fill="#FFFFFF">
+  <circle cx="-350" cy="540" r="100"/>
+</g>
+```
+```javascript
+<script>
+  var moveAnimation = anime({
+  targets: 'g',
+  translateX: 350 + (1920/2), 
+  /* 350 = start position 
+  1920/2 = half the horzirontal viewing area */
+  delay: 1000,
+  duration: 1366,
+  easing: 'easeInOutCirc',
+  });
+  moveAnimation.play();
+</script>
+```
 ##### Circle
 ![circle](././material/figure-02.jpg)
 
