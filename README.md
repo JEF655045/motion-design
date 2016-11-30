@@ -30,6 +30,7 @@ Remember to put anime.js into the same directory and include below line into htm
   moveAnimation.play();
 </script>
 ```
+
 ##### Circle
 If you create a circle, the anchor point is in the middle.
 ![circle](././material/figure-02.jpg)
@@ -67,7 +68,7 @@ If you want to replace the item with a SVG object, please follow below steps.
   });
   scaleAnimation.play();
 </script>
-        ```
+```
 
 ### Scale Object with compensation
 ![menuOpenalt](././material/menuOpenalt.gif)
