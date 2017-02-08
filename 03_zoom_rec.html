@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>horizontalLeft</title>
+  <title>zoom_rec</title>
   <meta charset="utf-8">
   <link href="styles.css" rel="stylesheet">
 </head>
@@ -12,32 +12,30 @@
             
             <!-- fill group object whith color here-->
             <g fill="white">
-                
-                <!-- the anchor point of circle is its center
-                You don't need to align the object--> 
-                <circle cx="-350" cy="540" r="100"/>
-
+                <rect x="960" y="540" width="1" height="1"/>
             </g>
         </svg>
     </section>
 
   <script src="anime.js"></script>
   <script>
-
-        var moveAnimation = anime({
-            
+      
+        var scaleAnimation = anime({
             targets: 'g',
-            translateX: 350 + (1920/2), 
-            /*
-            350 = start position 
-            1920/2 = half the horzirontal viewing area */
+            transform: ['translate(0 0) scale(1)', 'translate(-191140 -107560) scale(200)'],
+            /* scale 200 times mean x'=192000 y'=108000
+            To be able to compensate the poisition change, translate is required
+            860 = 192000 - 191140, 440 = 108000 - 107560
+            */
             
             delay: 1000,
             duration: 1366,
             autoplay: false,
-            easing: 'easeInOutCirc',
+            easing: 'easeInOutQuart',
         });
-        moveAnimation.play();
+      
+        scaleAnimation.play();
+      
       
   </script>
 </body>
